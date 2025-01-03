@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/file.png" type="image/x-icon">
+  <title>PopcornFlix</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.cdnfonts.com/css/cinema" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+</head>
+
+<body>
+
+  <main>
+    <img id="image_bg" src="https://images.squarespace-cdn.com/content/v1/5f4c51aa57fa907e048ff208/1604535961375-DVOHBOS6QRROJGQJ26T9/netflix-background-9.jpg" alt="">
+    <header>
+      <img style="width: 140px; margin-left: 2%;" src="./assets/file.png" alt="">
+      <div style="display: flex; align-items: center; margin-right: 5%;">
+        <input type="text" id="search-input" placeholder="Pesquisar filmes" style="padding: 10px; border-end-start-radius: 5px; border-top-left-radius: 5px;">
+        <button id="search-button" style="padding: 10px; background-color: #f1c40f; border: none; cursor: pointer; font-weight: bold; color: white; border-end-end-radius: 5px; border-top-right-radius: 5px;">Pesquisar</button>
+      </div>
+    </header>
+
+    <div id="modal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <button id="close-modal" class="close-button">Fechar</button>
+        <h2>Filmes Encontrados</h2>
+        <div id="modal-carousel" class="movie-carousel"></div>
+      </div>
+    </div>
+
+    <div id="movie-detail-modal" class="modal-detail">
+      <div class="modal-content">
+        <span id="close-detail-modal" class="close-detail-modal">&times;</span>
+        <div id="movie-detail-content">
+        </div>
+      </div>
+    </div>
+
+
+    <div style="display: flex; flex-direction: column; text-align: start;">
+      <h2 style="margin-left: 2%;">Ação</h2>
+      <div id="action-carousel" class="movie-carousel">
+
+      </div>
+    </div>
+
+
+    <div style="display: flex; flex-direction: column; text-align: start;">
+      <h2 style="margin-left: 2%;">Comédia</h2>
+      <div id="comedy-carousel" class="movie-carousel">
+
+      </div>
+    </div>
+
+
+    <div style="display: flex; flex-direction: column; text-align: start;">
+      <h2 style="margin-left: 2%;">Drama</h2>
+      <div id="drama-carousel" class="movie-carousel">
+
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; text-align: start;">
+      <h2 style="margin-left: 2%;">Romance</h2>
+      <div id="romance-carousel" class="movie-carousel">
+
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; text-align: start;">
+      <h2 style="margin-left: 2%;">Horror</h2>
+      <div id="horror-carousel" class="movie-carousel">
+
+      </div>
+    </div>
+
+  </main>
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
